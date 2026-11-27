@@ -1,0 +1,2516 @@
+{
+  "reconciliation": {
+    "raw_rows": 1048575,
+    "clean_rows": 1048575,
+    "all_gross_demand": 5124597821,
+    "all_return_units": 20735500,
+    "all_net_demand": 5103862321
+  },
+  "sql_query_outputs": {
+    "01_schema.sql": [],
+    "02_load_data.sql": [],
+    "03_data_quality.sql": [
+      {
+        "query_index": 1,
+        "rows": 1,
+        "records": [
+          {
+            "total_rows": 1048575,
+            "non_null_product_code": 1048575,
+            "non_null_warehouse": 1048575,
+            "non_null_product_category": 1048575,
+            "non_null_order_date": 1037336,
+            "missing_order_date": 11239,
+            "pct_missing_order_date": 1.0718,
+            "non_null_order_demand": 1048575,
+            "distinct_products": 2160,
+            "distinct_warehouses": 4,
+            "distinct_categories": 33,
+            "distinct_dates": 1729
+          }
+        ]
+      },
+      {
+        "query_index": 2,
+        "rows": 4,
+        "records": [
+          {
+            "warehouse": "Whse_A",
+            "total_rows": 153574,
+            "missing_date_rows": 11239.0,
+            "pct_missing_date": 7.3183
+          },
+          {
+            "warehouse": "Whse_C",
+            "total_rows": 42354,
+            "missing_date_rows": 0.0,
+            "pct_missing_date": 0.0
+          },
+          {
+            "warehouse": "Whse_J",
+            "total_rows": 764447,
+            "missing_date_rows": 0.0,
+            "pct_missing_date": 0.0
+          },
+          {
+            "warehouse": "Whse_S",
+            "total_rows": 88200,
+            "missing_date_rows": 0.0,
+            "pct_missing_date": 0.0
+          }
+        ]
+      },
+      {
+        "query_index": 3,
+        "rows": 1,
+        "records": [
+          {
+            "total_rows": 1048575,
+            "trailing_or_leading_space_rows": 1038106.0,
+            "plain_integer_rows": 1038106.0,
+            "parenthesized_rows": 10469.0,
+            "unparseable_rows": 0.0,
+            "zero_demand_rows": 28681.0,
+            "negative_demand_rows": 10469.0,
+            "min_demand": -999000,
+            "p25_demand": 18.0,
+            "median_demand": 300.0,
+            "p75_demand": 2000.0,
+            "p95_demand": 20000.0,
+            "p99_demand": 75000.0,
+            "max_demand": 4000000,
+            "mean_demand": 4867.43,
+            "stddev_demand": 28933.46
+          }
+        ]
+      },
+      {
+        "query_index": 4,
+        "rows": 1,
+        "records": [
+          {
+            "unique_5col_combinations": 926152,
+            "duplicated_groups": 84521.0,
+            "extra_duplicate_rows": 122423.0,
+            "total_rows_reconciled": 1048575.0
+          }
+        ]
+      },
+      {
+        "query_index": 5,
+        "rows": 1,
+        "records": [
+          {
+            "total_skus": 2160,
+            "multi_category_skus": 0.0
+          }
+        ]
+      },
+      {
+        "query_index": 6,
+        "rows": 4,
+        "records": [
+          {
+            "warehouse_count_per_sku": 1,
+            "sku_count": 1670
+          },
+          {
+            "warehouse_count_per_sku": 2,
+            "sku_count": 319
+          },
+          {
+            "warehouse_count_per_sku": 3,
+            "sku_count": 143
+          },
+          {
+            "warehouse_count_per_sku": 4,
+            "sku_count": 28
+          }
+        ]
+      },
+      {
+        "query_index": 7,
+        "rows": 7,
+        "records": [
+          {
+            "yr": 2011,
+            "row_count": 640,
+            "active_months": 7,
+            "min_date": "2011-01-08T00:00:00.000",
+            "max_date": "2011-12-31T00:00:00.000"
+          },
+          {
+            "yr": 2012,
+            "row_count": 203635,
+            "active_months": 12,
+            "min_date": "2012-01-01T00:00:00.000",
+            "max_date": "2012-12-31T00:00:00.000"
+          },
+          {
+            "yr": 2013,
+            "row_count": 218298,
+            "active_months": 12,
+            "min_date": "2013-01-01T00:00:00.000",
+            "max_date": "2013-12-31T00:00:00.000"
+          },
+          {
+            "yr": 2014,
+            "row_count": 216404,
+            "active_months": 12,
+            "min_date": "2014-01-01T00:00:00.000",
+            "max_date": "2014-12-31T00:00:00.000"
+          },
+          {
+            "yr": 2015,
+            "row_count": 209661,
+            "active_months": 12,
+            "min_date": "2015-01-01T00:00:00.000",
+            "max_date": "2015-12-31T00:00:00.000"
+          },
+          {
+            "yr": 2016,
+            "row_count": 188645,
+            "active_months": 12,
+            "min_date": "2016-01-03T00:00:00.000",
+            "max_date": "2016-12-30T00:00:00.000"
+          },
+          {
+            "yr": 2017,
+            "row_count": 53,
+            "active_months": 1,
+            "min_date": "2017-01-02T00:00:00.000",
+            "max_date": "2017-01-09T00:00:00.000"
+          }
+        ]
+      },
+      {
+        "query_index": 8,
+        "rows": 4,
+        "records": [
+          {
+            "warehouse": "Whse_A",
+            "parenthesized_rows": 6395,
+            "total_parenthesized_units": 7884524.0
+          },
+          {
+            "warehouse": "Whse_J",
+            "parenthesized_rows": 3555,
+            "total_parenthesized_units": 9339339.0
+          },
+          {
+            "warehouse": "Whse_S",
+            "parenthesized_rows": 402,
+            "total_parenthesized_units": 1898541.0
+          },
+          {
+            "warehouse": "Whse_C",
+            "parenthesized_rows": 117,
+            "total_parenthesized_units": 1613096.0
+          }
+        ]
+      }
+    ],
+    "04_cleaning_transformation.sql": [],
+    "05_eda.sql": [
+      {
+        "query_index": 1,
+        "rows": 4,
+        "records": [
+          {
+            "data_scope": "Penuh 2012-2016",
+            "row_count": 1036643,
+            "row_share_pct": 98.8621,
+            "gross_demand": 5110781174.0,
+            "net_demand": 5096047278.0,
+            "net_demand_share_pct": 99.8469
+          },
+          {
+            "data_scope": "Tanpa Tanggal (Whse_A)",
+            "row_count": 11239,
+            "row_share_pct": 1.0718,
+            "gross_demand": 5584740.0,
+            "net_demand": 10090.0,
+            "net_demand_share_pct": 0.0002
+          },
+          {
+            "data_scope": "Parsial 2011",
+            "row_count": 640,
+            "row_share_pct": 0.061,
+            "gross_demand": 7936940.0,
+            "net_demand": 7509986.0,
+            "net_demand_share_pct": 0.1471
+          },
+          {
+            "data_scope": "Parsial 2017 (Jan)",
+            "row_count": 53,
+            "row_share_pct": 0.0051,
+            "gross_demand": 294967.0,
+            "net_demand": 294967.0,
+            "net_demand_share_pct": 0.0058
+          }
+        ]
+      },
+      {
+        "query_index": 2,
+        "rows": 5,
+        "records": [
+          {
+            "order_year": 2012,
+            "order_lines": 203635,
+            "active_skus": 1966,
+            "gross_demand": 945501449.0,
+            "net_demand": 941742907.0,
+            "return_units": 3758542.0,
+            "yoy_net_growth_pct": null
+          },
+          {
+            "order_year": 2013,
+            "order_lines": 218298,
+            "active_skus": 2032,
+            "gross_demand": 1011653360.0,
+            "net_demand": 1009218798.0,
+            "return_units": 2434562.0,
+            "yoy_net_growth_pct": 7.17
+          },
+          {
+            "order_year": 2014,
+            "order_lines": 216404,
+            "active_skus": 2087,
+            "gross_demand": 1067725423.0,
+            "net_demand": 1064272479.0,
+            "return_units": 3452944.0,
+            "yoy_net_growth_pct": 5.46
+          },
+          {
+            "order_year": 2015,
+            "order_lines": 209661,
+            "active_skus": 2128,
+            "gross_demand": 1097421678.0,
+            "net_demand": 1095444965.0,
+            "return_units": 1976713.0,
+            "yoy_net_growth_pct": 2.93
+          },
+          {
+            "order_year": 2016,
+            "order_lines": 188645,
+            "active_skus": 2119,
+            "gross_demand": 988479264.0,
+            "net_demand": 985368129.0,
+            "return_units": 3111135.0,
+            "yoy_net_growth_pct": -10.05
+          }
+        ]
+      },
+      {
+        "query_index": 3,
+        "rows": 12,
+        "records": [
+          {
+            "order_month": 1,
+            "avg_monthly_net_demand": 85474346.0,
+            "sd_monthly_net_demand": 11341994.0,
+            "avg_monthly_order_lines": 16605.0,
+            "seasonal_index": 1.0064
+          },
+          {
+            "order_month": 2,
+            "avg_monthly_net_demand": 80919479.0,
+            "sd_monthly_net_demand": 7132618.0,
+            "avg_monthly_order_lines": 17540.0,
+            "seasonal_index": 0.9527
+          },
+          {
+            "order_month": 3,
+            "avg_monthly_net_demand": 92359515.0,
+            "sd_monthly_net_demand": 9166699.0,
+            "avg_monthly_order_lines": 18449.0,
+            "seasonal_index": 1.0874
+          },
+          {
+            "order_month": 4,
+            "avg_monthly_net_demand": 84542170.0,
+            "sd_monthly_net_demand": 7946832.0,
+            "avg_monthly_order_lines": 17036.0,
+            "seasonal_index": 0.9954
+          },
+          {
+            "order_month": 5,
+            "avg_monthly_net_demand": 82447445.0,
+            "sd_monthly_net_demand": 2568031.0,
+            "avg_monthly_order_lines": 16300.0,
+            "seasonal_index": 0.9707
+          },
+          {
+            "order_month": 6,
+            "avg_monthly_net_demand": 85850763.0,
+            "sd_monthly_net_demand": 7477679.0,
+            "avg_monthly_order_lines": 17185.0,
+            "seasonal_index": 1.0108
+          },
+          {
+            "order_month": 7,
+            "avg_monthly_net_demand": 91790250.0,
+            "sd_monthly_net_demand": 6867032.0,
+            "avg_monthly_order_lines": 18023.0,
+            "seasonal_index": 1.0807
+          },
+          {
+            "order_month": 8,
+            "avg_monthly_net_demand": 77023929.0,
+            "sd_monthly_net_demand": 5259615.0,
+            "avg_monthly_order_lines": 16003.0,
+            "seasonal_index": 0.9069
+          },
+          {
+            "order_month": 9,
+            "avg_monthly_net_demand": 79508420.0,
+            "sd_monthly_net_demand": 11030138.0,
+            "avg_monthly_order_lines": 17112.0,
+            "seasonal_index": 0.9361
+          },
+          {
+            "order_month": 10,
+            "avg_monthly_net_demand": 89687391.0,
+            "sd_monthly_net_demand": 6915021.0,
+            "avg_monthly_order_lines": 19323.0,
+            "seasonal_index": 1.056
+          },
+          {
+            "order_month": 11,
+            "avg_monthly_net_demand": 85759016.0,
+            "sd_monthly_net_demand": 7447794.0,
+            "avg_monthly_order_lines": 17638.0,
+            "seasonal_index": 1.0097
+          },
+          {
+            "order_month": 12,
+            "avg_monthly_net_demand": 83846732.0,
+            "sd_monthly_net_demand": 8614857.0,
+            "avg_monthly_order_lines": 16115.0,
+            "seasonal_index": 0.9872
+          }
+        ]
+      },
+      {
+        "query_index": 4,
+        "rows": 7,
+        "records": [
+          {
+            "day_of_week": 1,
+            "order_lines": 199710,
+            "line_share_pct": 19.27,
+            "total_net_demand": 1071836929.0,
+            "avg_demand_per_line": 5366.97
+          },
+          {
+            "day_of_week": 2,
+            "order_lines": 217175,
+            "line_share_pct": 20.95,
+            "total_net_demand": 1122257854.0,
+            "avg_demand_per_line": 5167.53
+          },
+          {
+            "day_of_week": 3,
+            "order_lines": 205292,
+            "line_share_pct": 19.8,
+            "total_net_demand": 877905372.0,
+            "avg_demand_per_line": 4276.37
+          },
+          {
+            "day_of_week": 4,
+            "order_lines": 204747,
+            "line_share_pct": 19.75,
+            "total_net_demand": 980132261.0,
+            "avg_demand_per_line": 4787.04
+          },
+          {
+            "day_of_week": 5,
+            "order_lines": 201095,
+            "line_share_pct": 19.4,
+            "total_net_demand": 971855783.0,
+            "avg_demand_per_line": 4832.82
+          },
+          {
+            "day_of_week": 6,
+            "order_lines": 1606,
+            "line_share_pct": 0.15,
+            "total_net_demand": 4799506.0,
+            "avg_demand_per_line": 2988.48
+          },
+          {
+            "day_of_week": 7,
+            "order_lines": 7018,
+            "line_share_pct": 0.68,
+            "total_net_demand": 67259573.0,
+            "avg_demand_per_line": 9583.87
+          }
+        ]
+      },
+      {
+        "query_index": 5,
+        "rows": 10,
+        "records": [
+          {
+            "product_category": "Category_019",
+            "skus": 534,
+            "order_lines": 470090.0,
+            "net_demand": 4213068570.0,
+            "share_pct": 82.67
+          },
+          {
+            "product_category": "Category_006",
+            "skus": 112,
+            "order_lines": 35495.0,
+            "net_demand": 401219159.0,
+            "share_pct": 7.87
+          },
+          {
+            "product_category": "Category_005",
+            "skus": 185,
+            "order_lines": 101582.0,
+            "net_demand": 197679740.0,
+            "share_pct": 3.88
+          },
+          {
+            "product_category": "Category_007",
+            "skus": 141,
+            "order_lines": 82348.0,
+            "net_demand": 127696217.0,
+            "share_pct": 2.51
+          },
+          {
+            "product_category": "Category_028",
+            "skus": 57,
+            "order_lines": 30957.0,
+            "net_demand": 47169520.0,
+            "share_pct": 0.93
+          },
+          {
+            "product_category": "Category_033",
+            "skus": 4,
+            "order_lines": 1849.0,
+            "net_demand": 42370000.0,
+            "share_pct": 0.83
+          },
+          {
+            "product_category": "Category_030",
+            "skus": 99,
+            "order_lines": 12978.0,
+            "net_demand": 40024855.0,
+            "share_pct": 0.79
+          },
+          {
+            "product_category": "Category_032",
+            "skus": 49,
+            "order_lines": 9288.0,
+            "net_demand": 4424920.0,
+            "share_pct": 0.09
+          },
+          {
+            "product_category": "Category_021",
+            "skus": 143,
+            "order_lines": 51950.0,
+            "net_demand": 4340660.0,
+            "share_pct": 0.09
+          },
+          {
+            "product_category": "Category_009",
+            "skus": 102,
+            "order_lines": 19720.0,
+            "net_demand": 3608178.0,
+            "share_pct": 0.07
+          }
+        ]
+      },
+      {
+        "query_index": 6,
+        "rows": 20,
+        "records": [
+          {
+            "warehouse": "Whse_A",
+            "order_year": 2012,
+            "order_lines": 28218.0,
+            "sku_month_slots": 3723.0,
+            "net_demand": 28298540.0,
+            "return_units": 374730.0
+          },
+          {
+            "warehouse": "Whse_A",
+            "order_year": 2013,
+            "order_lines": 33607.0,
+            "sku_month_slots": 3856.0,
+            "net_demand": 27866100.0,
+            "return_units": 415395.0
+          },
+          {
+            "warehouse": "Whse_A",
+            "order_year": 2014,
+            "order_lines": 28124.0,
+            "sku_month_slots": 3974.0,
+            "net_demand": 28879054.0,
+            "return_units": 314163.0
+          },
+          {
+            "warehouse": "Whse_A",
+            "order_year": 2015,
+            "order_lines": 26686.0,
+            "sku_month_slots": 4191.0,
+            "net_demand": 28995542.0,
+            "return_units": 586224.0
+          },
+          {
+            "warehouse": "Whse_A",
+            "order_year": 2016,
+            "order_lines": 25562.0,
+            "sku_month_slots": 4295.0,
+            "net_demand": 28998778.0,
+            "return_units": 613756.0
+          },
+          {
+            "warehouse": "Whse_C",
+            "order_year": 2012,
+            "order_lines": 6889.0,
+            "sku_month_slots": 1874.0,
+            "net_demand": 94596073.0,
+            "return_units": 613554.0
+          },
+          {
+            "warehouse": "Whse_C",
+            "order_year": 2013,
+            "order_lines": 7934.0,
+            "sku_month_slots": 2030.0,
+            "net_demand": 109938491.0,
+            "return_units": 48694.0
+          },
+          {
+            "warehouse": "Whse_C",
+            "order_year": 2014,
+            "order_lines": 8187.0,
+            "sku_month_slots": 2077.0,
+            "net_demand": 118245964.0,
+            "return_units": 668536.0
+          },
+          {
+            "warehouse": "Whse_C",
+            "order_year": 2015,
+            "order_lines": 8963.0,
+            "sku_month_slots": 2308.0,
+            "net_demand": 125149312.0,
+            "return_units": 19837.0
+          },
+          {
+            "warehouse": "Whse_C",
+            "order_year": 2016,
+            "order_lines": 10234.0,
+            "sku_month_slots": 2460.0,
+            "net_demand": 130848147.0,
+            "return_units": 262475.0
+          },
+          {
+            "warehouse": "Whse_J",
+            "order_year": 2012,
+            "order_lines": 150013.0,
+            "sku_month_slots": 15098.0,
+            "net_demand": 611270559.0,
+            "return_units": 2644945.0
+          },
+          {
+            "warehouse": "Whse_J",
+            "order_year": 2013,
+            "order_lines": 156251.0,
+            "sku_month_slots": 15791.0,
+            "net_demand": 661775416.0,
+            "return_units": 1503127.0
+          },
+          {
+            "warehouse": "Whse_J",
+            "order_year": 2014,
+            "order_lines": 157786.0,
+            "sku_month_slots": 16463.0,
+            "net_demand": 691259773.0,
+            "return_units": 2435519.0
+          },
+          {
+            "warehouse": "Whse_J",
+            "order_year": 2015,
+            "order_lines": 153937.0,
+            "sku_month_slots": 16903.0,
+            "net_demand": 697430144.0,
+            "return_units": 1251230.0
+          },
+          {
+            "warehouse": "Whse_J",
+            "order_year": 2016,
+            "order_lines": 146228.0,
+            "sku_month_slots": 17380.0,
+            "net_demand": 682330370.0,
+            "return_units": 1503313.0
+          },
+          {
+            "warehouse": "Whse_S",
+            "order_year": 2012,
+            "order_lines": 18515.0,
+            "sku_month_slots": 4571.0,
+            "net_demand": 207577735.0,
+            "return_units": 125313.0
+          },
+          {
+            "warehouse": "Whse_S",
+            "order_year": 2013,
+            "order_lines": 20506.0,
+            "sku_month_slots": 4918.0,
+            "net_demand": 209638791.0,
+            "return_units": 467346.0
+          },
+          {
+            "warehouse": "Whse_S",
+            "order_year": 2014,
+            "order_lines": 22307.0,
+            "sku_month_slots": 5310.0,
+            "net_demand": 225887688.0,
+            "return_units": 34726.0
+          },
+          {
+            "warehouse": "Whse_S",
+            "order_year": 2015,
+            "order_lines": 20075.0,
+            "sku_month_slots": 5443.0,
+            "net_demand": 243869967.0,
+            "return_units": 119422.0
+          },
+          {
+            "warehouse": "Whse_S",
+            "order_year": 2016,
+            "order_lines": 6621.0,
+            "sku_month_slots": 2953.0,
+            "net_demand": 143190834.0,
+            "return_units": 731591.0
+          }
+        ]
+      }
+    ],
+    "06_analysis.sql": [],
+    "07_views.sql": []
+  },
+  "views": {
+    "vw_kpi_summary": [
+      {
+        "total_raw_rows": 1048575,
+        "missing_date_rows": 11239.0,
+        "parenthesized_rows": 10469.0,
+        "repeated_5col_rows": 122423.0,
+        "all_gross_demand": 5124597821.0,
+        "all_net_demand": 5103862321.0,
+        "full_period_rows": 1036643,
+        "active_skus_full_period": 2160,
+        "active_categories": 33,
+        "active_warehouses": 4,
+        "full_gross_demand": 5110781174.0,
+        "full_net_demand": 5096047278.0,
+        "full_return_units": 14733896.0,
+        "return_rate_pct": 0.29,
+        "class_a_skus": 84,
+        "class_a_demand_pct": 79.81,
+        "best_forecast_model": "Moving Average 6M",
+        "best_model_wape_pct": 11.21,
+        "best_model_bias_pct": 1.13
+      }
+    ],
+    "vw_warehouse_performance": [
+      {
+        "warehouse": "Whse_J",
+        "total_records": 764447,
+        "dated_records": 764447.0,
+        "missing_date_records": 0.0,
+        "distinct_skus": 1625,
+        "distinct_categories": 25,
+        "total_gross_demand": 3353861057.0,
+        "total_net_demand": 3344521718.0,
+        "total_return_units": 9339339.0,
+        "return_rate_pct": 0.2785,
+        "share_of_net_demand_pct": 65.53,
+        "net_demand_2016": 682330370.0,
+        "forecast_demand_2017": 700487507.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "total_records": 88200,
+        "dated_records": 88200.0,
+        "missing_date_records": 0.0,
+        "distinct_skus": 553,
+        "distinct_categories": 28,
+        "total_gross_demand": 1036126159.0,
+        "total_net_demand": 1034227618.0,
+        "total_return_units": 1898541.0,
+        "return_rate_pct": 0.1832,
+        "share_of_net_demand_pct": 20.26,
+        "net_demand_2016": 143190834.0,
+        "forecast_demand_2017": 135563453.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "total_records": 42354,
+        "dated_records": 42354.0,
+        "missing_date_records": 0.0,
+        "distinct_skus": 244,
+        "distinct_categories": 16,
+        "total_gross_demand": 583458308.0,
+        "total_net_demand": 581845212.0,
+        "total_return_units": 1613096.0,
+        "return_rate_pct": 0.2765,
+        "share_of_net_demand_pct": 11.4,
+        "net_demand_2016": 130848147.0,
+        "forecast_demand_2017": 134181096.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "total_records": 153574,
+        "dated_records": 142335.0,
+        "missing_date_records": 11239.0,
+        "distinct_skus": 427,
+        "distinct_categories": 25,
+        "total_gross_demand": 151152297.0,
+        "total_net_demand": 143267773.0,
+        "total_return_units": 7884524.0,
+        "return_rate_pct": 5.2163,
+        "share_of_net_demand_pct": 2.81,
+        "net_demand_2016": 28998778.0,
+        "forecast_demand_2017": 29854424.0
+      }
+    ],
+    "vw_category_pareto": [
+      {
+        "product_category": "Category_019",
+        "distinct_skus": 534,
+        "order_lines": 470090.0,
+        "gross_demand": 4223244866.0,
+        "net_demand": 4213068570.0,
+        "return_units": 10176296.0,
+        "share_pct": 82.67,
+        "cum_share_pct": 82.67
+      },
+      {
+        "product_category": "Category_006",
+        "distinct_skus": 112,
+        "order_lines": 35495.0,
+        "gross_demand": 403114990.0,
+        "net_demand": 401219159.0,
+        "return_units": 1895831.0,
+        "share_pct": 7.87,
+        "cum_share_pct": 90.55
+      },
+      {
+        "product_category": "Category_005",
+        "distinct_skus": 185,
+        "order_lines": 101582.0,
+        "gross_demand": 198334955.0,
+        "net_demand": 197679740.0,
+        "return_units": 655215.0,
+        "share_pct": 3.88,
+        "cum_share_pct": 94.43
+      },
+      {
+        "product_category": "Category_007",
+        "distinct_skus": 141,
+        "order_lines": 82348.0,
+        "gross_demand": 128178356.0,
+        "net_demand": 127696217.0,
+        "return_units": 482139.0,
+        "share_pct": 2.51,
+        "cum_share_pct": 96.93
+      },
+      {
+        "product_category": "Category_028",
+        "distinct_skus": 57,
+        "order_lines": 30957.0,
+        "gross_demand": 48054024.0,
+        "net_demand": 47169520.0,
+        "return_units": 884504.0,
+        "share_pct": 0.93,
+        "cum_share_pct": 97.86
+      },
+      {
+        "product_category": "Category_033",
+        "distinct_skus": 4,
+        "order_lines": 1849.0,
+        "gross_demand": 42490000.0,
+        "net_demand": 42370000.0,
+        "return_units": 120000.0,
+        "share_pct": 0.83,
+        "cum_share_pct": 98.69
+      },
+      {
+        "product_category": "Category_030",
+        "distinct_skus": 99,
+        "order_lines": 12978.0,
+        "gross_demand": 40262955.0,
+        "net_demand": 40024855.0,
+        "return_units": 238100.0,
+        "share_pct": 0.79,
+        "cum_share_pct": 99.47
+      },
+      {
+        "product_category": "Category_032",
+        "distinct_skus": 49,
+        "order_lines": 9288.0,
+        "gross_demand": 4438464.0,
+        "net_demand": 4424920.0,
+        "return_units": 13544.0,
+        "share_pct": 0.09,
+        "cum_share_pct": 99.56
+      },
+      {
+        "product_category": "Category_021",
+        "distinct_skus": 143,
+        "order_lines": 51950.0,
+        "gross_demand": 4406379.0,
+        "net_demand": 4340660.0,
+        "return_units": 65719.0,
+        "share_pct": 0.09,
+        "cum_share_pct": 99.65
+      },
+      {
+        "product_category": "Category_009",
+        "distinct_skus": 102,
+        "order_lines": 19720.0,
+        "gross_demand": 3694371.0,
+        "net_demand": 3608178.0,
+        "return_units": 86193.0,
+        "share_pct": 0.07,
+        "cum_share_pct": 99.72
+      },
+      {
+        "product_category": "Category_023",
+        "distinct_skus": 62,
+        "order_lines": 7885.0,
+        "gross_demand": 3318135.0,
+        "net_demand": 3307196.0,
+        "return_units": 10939.0,
+        "share_pct": 0.06,
+        "cum_share_pct": 99.78
+      },
+      {
+        "product_category": "Category_011",
+        "distinct_skus": 59,
+        "order_lines": 23199.0,
+        "gross_demand": 2871708.0,
+        "net_demand": 2851122.0,
+        "return_units": 20586.0,
+        "share_pct": 0.06,
+        "cum_share_pct": 99.84
+      },
+      {
+        "product_category": "Category_020",
+        "distinct_skus": 23,
+        "order_lines": 3465.0,
+        "gross_demand": 2353051.0,
+        "net_demand": 2326710.0,
+        "return_units": 26341.0,
+        "share_pct": 0.05,
+        "cum_share_pct": 99.88
+      },
+      {
+        "product_category": "Category_001",
+        "distinct_skus": 278,
+        "order_lines": 97707.0,
+        "gross_demand": 1741922.0,
+        "net_demand": 1727397.0,
+        "return_units": 14525.0,
+        "share_pct": 0.03,
+        "cum_share_pct": 99.92
+      },
+      {
+        "product_category": "Category_024",
+        "distinct_skus": 53,
+        "order_lines": 20863.0,
+        "gross_demand": 1045310.0,
+        "net_demand": 1033589.0,
+        "return_units": 11721.0,
+        "share_pct": 0.02,
+        "cum_share_pct": 99.94
+      },
+      {
+        "product_category": "Category_015",
+        "distinct_skus": 64,
+        "order_lines": 22937.0,
+        "gross_demand": 822997.0,
+        "net_demand": 811893.0,
+        "return_units": 11104.0,
+        "share_pct": 0.02,
+        "cum_share_pct": 99.95
+      },
+      {
+        "product_category": "Category_022",
+        "distinct_skus": 46,
+        "order_lines": 8642.0,
+        "gross_demand": 598587.0,
+        "net_demand": 592229.0,
+        "return_units": 6358.0,
+        "share_pct": 0.01,
+        "cum_share_pct": 99.96
+      },
+      {
+        "product_category": "Category_025",
+        "distinct_skus": 2,
+        "order_lines": 35.0,
+        "gross_demand": 486000.0,
+        "net_demand": 486000.0,
+        "return_units": 0.0,
+        "share_pct": 0.01,
+        "cum_share_pct": 99.97
+      },
+      {
+        "product_category": "Category_003",
+        "distinct_skus": 12,
+        "order_lines": 4187.0,
+        "gross_demand": 388989.0,
+        "net_demand": 386736.0,
+        "return_units": 2253.0,
+        "share_pct": 0.01,
+        "cum_share_pct": 99.98
+      },
+      {
+        "product_category": "Category_013",
+        "distinct_skus": 13,
+        "order_lines": 3740.0,
+        "gross_demand": 305423.0,
+        "net_demand": 301635.0,
+        "return_units": 3788.0,
+        "share_pct": 0.01,
+        "cum_share_pct": 99.99
+      },
+      {
+        "product_category": "Category_026",
+        "distinct_skus": 41,
+        "order_lines": 14763.0,
+        "gross_demand": 279455.0,
+        "net_demand": 276957.0,
+        "return_units": 2498.0,
+        "share_pct": 0.01,
+        "cum_share_pct": 99.99
+      },
+      {
+        "product_category": "Category_004",
+        "distinct_skus": 1,
+        "order_lines": 324.0,
+        "gross_demand": 95497.0,
+        "net_demand": 94728.0,
+        "return_units": 769.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_012",
+        "distinct_skus": 24,
+        "order_lines": 1146.0,
+        "gross_demand": 68208.0,
+        "net_demand": 66480.0,
+        "return_units": 1728.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_017",
+        "distinct_skus": 8,
+        "order_lines": 615.0,
+        "gross_demand": 47883.0,
+        "net_demand": 46309.0,
+        "return_units": 1574.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_018",
+        "distinct_skus": 16,
+        "order_lines": 5237.0,
+        "gross_demand": 45731.0,
+        "net_demand": 45446.0,
+        "return_units": 285.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_029",
+        "distinct_skus": 4,
+        "order_lines": 671.0,
+        "gross_demand": 23020.0,
+        "net_demand": 22061.0,
+        "return_units": 959.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_010",
+        "distinct_skus": 7,
+        "order_lines": 976.0,
+        "gross_demand": 21836.0,
+        "net_demand": 21118.0,
+        "return_units": 718.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_008",
+        "distinct_skus": 7,
+        "order_lines": 1560.0,
+        "gross_demand": 17545.0,
+        "net_demand": 17522.0,
+        "return_units": 23.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_016",
+        "distinct_skus": 4,
+        "order_lines": 37.0,
+        "gross_demand": 16850.0,
+        "net_demand": 16850.0,
+        "return_units": 0.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_031",
+        "distinct_skus": 6,
+        "order_lines": 2268.0,
+        "gross_demand": 12863.0,
+        "net_demand": 12704.0,
+        "return_units": 159.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_002",
+        "distinct_skus": 1,
+        "order_lines": 77.0,
+        "gross_demand": 624.0,
+        "net_demand": 620.0,
+        "return_units": 4.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_014",
+        "distinct_skus": 1,
+        "order_lines": 26.0,
+        "gross_demand": 100.0,
+        "net_demand": 100.0,
+        "return_units": 0.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      },
+      {
+        "product_category": "Category_027",
+        "distinct_skus": 2,
+        "order_lines": 26.0,
+        "gross_demand": 80.0,
+        "net_demand": 57.0,
+        "return_units": 23.0,
+        "share_pct": 0.0,
+        "cum_share_pct": 100.0
+      }
+    ],
+    "vw_abc_xyz_matrix": [
+      {
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "sku_count": 57,
+        "sku_share_pct": 2.64,
+        "total_net_demand": 3231605000.0,
+        "demand_share_pct": 63.41,
+        "avg_cv": 0.3,
+        "avg_adi": 1.0
+      },
+      {
+        "abc_class": "A",
+        "xyz_class": "Y",
+        "demand_pattern": "Erratic",
+        "sku_count": 5,
+        "sku_share_pct": 0.23,
+        "total_net_demand": 119114000.0,
+        "demand_share_pct": 2.34,
+        "avg_cv": 0.86,
+        "avg_adi": 1.0
+      },
+      {
+        "abc_class": "A",
+        "xyz_class": "Y",
+        "demand_pattern": "Smooth",
+        "sku_count": 19,
+        "sku_share_pct": 0.88,
+        "total_net_demand": 671095850.0,
+        "demand_share_pct": 13.17,
+        "avg_cv": 0.6,
+        "avg_adi": 1.0
+      },
+      {
+        "abc_class": "A",
+        "xyz_class": "Z",
+        "demand_pattern": "Erratic",
+        "sku_count": 3,
+        "sku_share_pct": 0.14,
+        "total_net_demand": 45217750.0,
+        "demand_share_pct": 0.89,
+        "avg_cv": 1.2,
+        "avg_adi": 1.01
+      },
+      {
+        "abc_class": "B",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "sku_count": 81,
+        "sku_share_pct": 3.75,
+        "total_net_demand": 356219675.0,
+        "demand_share_pct": 6.99,
+        "avg_cv": 0.38,
+        "avg_adi": 1.0
+      },
+      {
+        "abc_class": "B",
+        "xyz_class": "Y",
+        "demand_pattern": "Erratic",
+        "sku_count": 31,
+        "sku_share_pct": 1.44,
+        "total_net_demand": 97051700.0,
+        "demand_share_pct": 1.9,
+        "avg_cv": 0.81,
+        "avg_adi": 1.02
+      },
+      {
+        "abc_class": "B",
+        "xyz_class": "Y",
+        "demand_pattern": "Intermittent",
+        "sku_count": 1,
+        "sku_share_pct": 0.05,
+        "total_net_demand": 5190000.0,
+        "demand_share_pct": 0.1,
+        "avg_cv": 0.75,
+        "avg_adi": 1.33
+      },
+      {
+        "abc_class": "B",
+        "xyz_class": "Y",
+        "demand_pattern": "Smooth",
+        "sku_count": 48,
+        "sku_share_pct": 2.22,
+        "total_net_demand": 182034992.0,
+        "demand_share_pct": 3.57,
+        "avg_cv": 0.62,
+        "avg_adi": 1.03
+      },
+      {
+        "abc_class": "B",
+        "xyz_class": "Z",
+        "demand_pattern": "Erratic",
+        "sku_count": 27,
+        "sku_share_pct": 1.25,
+        "total_net_demand": 104135400.0,
+        "demand_share_pct": 2.04,
+        "avg_cv": 1.45,
+        "avg_adi": 1.05
+      },
+      {
+        "abc_class": "B",
+        "xyz_class": "Z",
+        "demand_pattern": "Intermittent",
+        "sku_count": 4,
+        "sku_share_pct": 0.19,
+        "total_net_demand": 7392500.0,
+        "demand_share_pct": 0.15,
+        "avg_cv": 1.15,
+        "avg_adi": 1.72
+      },
+      {
+        "abc_class": "B",
+        "xyz_class": "Z",
+        "demand_pattern": "Lumpy",
+        "sku_count": 10,
+        "sku_share_pct": 0.46,
+        "total_net_demand": 21689300.0,
+        "demand_share_pct": 0.43,
+        "avg_cv": 1.31,
+        "avg_adi": 1.59
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "sku_count": 110,
+        "sku_share_pct": 5.09,
+        "total_net_demand": 45814038.0,
+        "demand_share_pct": 0.9,
+        "avg_cv": 0.42,
+        "avg_adi": 1.0
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "Y",
+        "demand_pattern": "Erratic",
+        "sku_count": 352,
+        "sku_share_pct": 16.3,
+        "total_net_demand": 45275554.0,
+        "demand_share_pct": 0.89,
+        "avg_cv": 0.86,
+        "avg_adi": 1.05
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "Y",
+        "demand_pattern": "Intermittent",
+        "sku_count": 9,
+        "sku_share_pct": 0.42,
+        "total_net_demand": 1374554.0,
+        "demand_share_pct": 0.03,
+        "avg_cv": 0.94,
+        "avg_adi": 1.38
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "Y",
+        "demand_pattern": "Smooth",
+        "sku_count": 319,
+        "sku_share_pct": 14.77,
+        "total_net_demand": 79363416.0,
+        "demand_share_pct": 1.56,
+        "avg_cv": 0.64,
+        "avg_adi": 1.04
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "Z",
+        "demand_pattern": "Erratic",
+        "sku_count": 462,
+        "sku_share_pct": 21.39,
+        "total_net_demand": 45424406.0,
+        "demand_share_pct": 0.89,
+        "avg_cv": 1.44,
+        "avg_adi": 1.14
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "Z",
+        "demand_pattern": "Intermittent",
+        "sku_count": 93,
+        "sku_share_pct": 4.31,
+        "total_net_demand": 9672443.0,
+        "demand_share_pct": 0.19,
+        "avg_cv": 2.37,
+        "avg_adi": 7.51
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "Z",
+        "demand_pattern": "Lumpy",
+        "sku_count": 524,
+        "sku_share_pct": 24.26,
+        "total_net_demand": 28334357.0,
+        "demand_share_pct": 0.56,
+        "avg_cv": 2.31,
+        "avg_adi": 2.85
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "Z",
+        "demand_pattern": "Smooth",
+        "sku_count": 5,
+        "sku_share_pct": 0.23,
+        "total_net_demand": 42343.0,
+        "demand_share_pct": 0.0,
+        "avg_cv": 2.3,
+        "avg_adi": 1.13
+      }
+    ],
+    "vw_seasonality_heatmap": [
+      {
+        "warehouse": "Whse_A",
+        "order_month": 1,
+        "avg_month_demand": 2156021.0,
+        "seasonal_index": 0.9044
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 2,
+        "avg_month_demand": 2438061.0,
+        "seasonal_index": 1.0227
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 3,
+        "avg_month_demand": 2392359.0,
+        "seasonal_index": 1.0035
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 4,
+        "avg_month_demand": 2243453.0,
+        "seasonal_index": 0.9411
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 5,
+        "avg_month_demand": 2588585.0,
+        "seasonal_index": 1.0858
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 6,
+        "avg_month_demand": 2224091.0,
+        "seasonal_index": 0.9329
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 7,
+        "avg_month_demand": 2589762.0,
+        "seasonal_index": 1.0863
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 8,
+        "avg_month_demand": 2556498.0,
+        "seasonal_index": 1.0724
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 9,
+        "avg_month_demand": 2417106.0,
+        "seasonal_index": 1.0139
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 10,
+        "avg_month_demand": 2322085.0,
+        "seasonal_index": 0.974
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 11,
+        "avg_month_demand": 2453608.0,
+        "seasonal_index": 1.0292
+      },
+      {
+        "warehouse": "Whse_A",
+        "order_month": 12,
+        "avg_month_demand": 2225974.0,
+        "seasonal_index": 0.9337
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 1,
+        "avg_month_demand": 8954785.0,
+        "seasonal_index": 0.9283
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 2,
+        "avg_month_demand": 7495480.0,
+        "seasonal_index": 0.777
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 3,
+        "avg_month_demand": 10994734.0,
+        "seasonal_index": 1.1398
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 4,
+        "avg_month_demand": 9997654.0,
+        "seasonal_index": 1.0364
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 5,
+        "avg_month_demand": 9435182.0,
+        "seasonal_index": 0.9781
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 6,
+        "avg_month_demand": 9641526.0,
+        "seasonal_index": 0.9995
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 7,
+        "avg_month_demand": 11540570.0,
+        "seasonal_index": 1.1964
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 8,
+        "avg_month_demand": 9429745.0,
+        "seasonal_index": 0.9776
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 9,
+        "avg_month_demand": 9213973.0,
+        "seasonal_index": 0.9552
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 10,
+        "avg_month_demand": 9724419.0,
+        "seasonal_index": 1.0081
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 11,
+        "avg_month_demand": 9637769.0,
+        "seasonal_index": 0.9991
+      },
+      {
+        "warehouse": "Whse_C",
+        "order_month": 12,
+        "avg_month_demand": 9689761.0,
+        "seasonal_index": 1.0045
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 1,
+        "avg_month_demand": 54781097.0,
+        "seasonal_index": 0.9829
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 2,
+        "avg_month_demand": 55358998.0,
+        "seasonal_index": 0.9933
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 3,
+        "avg_month_demand": 58432951.0,
+        "seasonal_index": 1.0484
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 4,
+        "avg_month_demand": 55741314.0,
+        "seasonal_index": 1.0001
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 5,
+        "avg_month_demand": 51958090.0,
+        "seasonal_index": 0.9322
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 6,
+        "avg_month_demand": 56637198.0,
+        "seasonal_index": 1.0162
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 7,
+        "avg_month_demand": 59651402.0,
+        "seasonal_index": 1.0703
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 8,
+        "avg_month_demand": 49566933.0,
+        "seasonal_index": 0.8893
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 9,
+        "avg_month_demand": 53684662.0,
+        "seasonal_index": 0.9632
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 10,
+        "avg_month_demand": 60272726.0,
+        "seasonal_index": 1.0814
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 11,
+        "avg_month_demand": 57660973.0,
+        "seasonal_index": 1.0346
+      },
+      {
+        "warehouse": "Whse_J",
+        "order_month": 12,
+        "avg_month_demand": 55066908.0,
+        "seasonal_index": 0.988
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 1,
+        "avg_month_demand": 19582443.0,
+        "seasonal_index": 1.1405
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 2,
+        "avg_month_demand": 15626940.0,
+        "seasonal_index": 0.9102
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 3,
+        "avg_month_demand": 20539471.0,
+        "seasonal_index": 1.1963
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 4,
+        "avg_month_demand": 16559748.0,
+        "seasonal_index": 0.9645
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 5,
+        "avg_month_demand": 18465589.0,
+        "seasonal_index": 1.0755
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 6,
+        "avg_month_demand": 17347948.0,
+        "seasonal_index": 1.0104
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 7,
+        "avg_month_demand": 18008516.0,
+        "seasonal_index": 1.0489
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 8,
+        "avg_month_demand": 15470752.0,
+        "seasonal_index": 0.9011
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 9,
+        "avg_month_demand": 14192679.0,
+        "seasonal_index": 0.8266
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 10,
+        "avg_month_demand": 17368161.0,
+        "seasonal_index": 1.0116
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 11,
+        "avg_month_demand": 16006666.0,
+        "seasonal_index": 0.9323
+      },
+      {
+        "warehouse": "Whse_S",
+        "order_month": 12,
+        "avg_month_demand": 16864089.0,
+        "seasonal_index": 0.9822
+      }
+    ],
+    "vw_data_quality_summary": [
+      {
+        "warehouse": "Whse_J",
+        "total_rows": 764447,
+        "missing_date_rows": 0.0,
+        "parenthesized_rows": 3555.0,
+        "zero_demand_rows": 3836.0,
+        "repeated_5col_rows": 98844.0,
+        "partial_2011_rows": 193.0,
+        "partial_2017_rows": 39.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "total_rows": 153574,
+        "missing_date_rows": 11239.0,
+        "parenthesized_rows": 6395.0,
+        "zero_demand_rows": 24636.0,
+        "repeated_5col_rows": 20939.0,
+        "partial_2011_rows": 138.0,
+        "partial_2017_rows": 0.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "total_rows": 88200,
+        "missing_date_rows": 0.0,
+        "parenthesized_rows": 402.0,
+        "zero_demand_rows": 185.0,
+        "repeated_5col_rows": 1991.0,
+        "partial_2011_rows": 174.0,
+        "partial_2017_rows": 2.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "total_rows": 42354,
+        "missing_date_rows": 0.0,
+        "parenthesized_rows": 117.0,
+        "zero_demand_rows": 24.0,
+        "repeated_5col_rows": 649.0,
+        "partial_2011_rows": 135.0,
+        "partial_2017_rows": 12.0
+      }
+    ],
+    "forecast_model_benchmark_2016": [
+      {
+        "model_name": "Moving Average 6M",
+        "eval_points": 48,
+        "total_actual_2016": 985368129.0,
+        "total_forecast_2016": 996465554.0,
+        "wape_pct": 11.21,
+        "mae": 2301615.0,
+        "rmse": 3317016.0,
+        "bias_pct": 1.13
+      },
+      {
+        "model_name": "Seasonal-MA6 Hybrid",
+        "eval_points": 48,
+        "total_actual_2016": 985368129.0,
+        "total_forecast_2016": 997122585.0,
+        "wape_pct": 11.29,
+        "mae": 2318233.0,
+        "rmse": 3307789.0,
+        "bias_pct": 1.19
+      },
+      {
+        "model_name": "Moving Average 3M",
+        "eval_points": 48,
+        "total_actual_2016": 985368129.0,
+        "total_forecast_2016": 988699873.0,
+        "wape_pct": 11.51,
+        "mae": 2362142.0,
+        "rmse": 3276264.0,
+        "bias_pct": 0.34
+      },
+      {
+        "model_name": "Naive (t-1)",
+        "eval_points": 48,
+        "total_actual_2016": 985368129.0,
+        "total_forecast_2016": 993529946.0,
+        "wape_pct": 15.88,
+        "mae": 3258997.0,
+        "rmse": 4260535.0,
+        "bias_pct": 0.83
+      },
+      {
+        "model_name": "Seasonal Naive (t-12)",
+        "eval_points": 48,
+        "total_actual_2016": 985368129.0,
+        "total_forecast_2016": 1095444965.0,
+        "wape_pct": 19.29,
+        "mae": 3959733.0,
+        "rmse": 6026552.0,
+        "bias_pct": 11.17
+      }
+    ],
+    "forecast_projection_2017": [
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 1,
+        "forecast_ym": "2017-01",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 0.9044,
+        "forecast_demand": 2249988.0,
+        "forecast_lower": 1931165.0,
+        "forecast_upper": 2568811.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 2,
+        "forecast_ym": "2017-02",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 1.0227,
+        "forecast_demand": 2544320.0,
+        "forecast_lower": 2183790.0,
+        "forecast_upper": 2904851.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 3,
+        "forecast_ym": "2017-03",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 1.0035,
+        "forecast_demand": 2496626.0,
+        "forecast_lower": 2142854.0,
+        "forecast_upper": 2850398.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 4,
+        "forecast_ym": "2017-04",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 0.9411,
+        "forecast_demand": 2341231.0,
+        "forecast_lower": 2009478.0,
+        "forecast_upper": 2672983.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 5,
+        "forecast_ym": "2017-05",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 1.0858,
+        "forecast_demand": 2701405.0,
+        "forecast_lower": 2318616.0,
+        "forecast_upper": 3084194.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 6,
+        "forecast_ym": "2017-06",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 0.9329,
+        "forecast_demand": 2321025.0,
+        "forecast_lower": 1992136.0,
+        "forecast_upper": 2649914.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 7,
+        "forecast_ym": "2017-07",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 1.0863,
+        "forecast_demand": 2702633.0,
+        "forecast_lower": 2319670.0,
+        "forecast_upper": 3085596.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 8,
+        "forecast_ym": "2017-08",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 1.0724,
+        "forecast_demand": 2667919.0,
+        "forecast_lower": 2289875.0,
+        "forecast_upper": 3045963.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 9,
+        "forecast_ym": "2017-09",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 1.0139,
+        "forecast_demand": 2522452.0,
+        "forecast_lower": 2165021.0,
+        "forecast_upper": 2879884.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 10,
+        "forecast_ym": "2017-10",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 0.974,
+        "forecast_demand": 2423290.0,
+        "forecast_lower": 2079910.0,
+        "forecast_upper": 2766670.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 11,
+        "forecast_ym": "2017-11",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 1.0292,
+        "forecast_demand": 2560545.0,
+        "forecast_lower": 2197716.0,
+        "forecast_upper": 2923375.0
+      },
+      {
+        "warehouse": "Whse_A",
+        "forecast_year": 2017,
+        "forecast_month": 12,
+        "forecast_ym": "2017-12",
+        "baseline_level": 2487869.0,
+        "seasonal_index": 0.9337,
+        "forecast_demand": 2322990.0,
+        "forecast_lower": 1993822.0,
+        "forecast_upper": 2652157.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 1,
+        "forecast_ym": "2017-01",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 0.9283,
+        "forecast_demand": 10380171.0,
+        "forecast_lower": 8583364.0,
+        "forecast_upper": 12176979.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 2,
+        "forecast_ym": "2017-02",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 0.777,
+        "forecast_demand": 8688580.0,
+        "forecast_lower": 7184587.0,
+        "forecast_upper": 10192573.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 3,
+        "forecast_ym": "2017-03",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 1.1398,
+        "forecast_demand": 12744830.0,
+        "forecast_lower": 10538700.0,
+        "forecast_upper": 14950960.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 4,
+        "forecast_ym": "2017-04",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 1.0364,
+        "forecast_demand": 11589039.0,
+        "forecast_lower": 9582977.0,
+        "forecast_upper": 13595102.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 5,
+        "forecast_ym": "2017-05",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 0.9781,
+        "forecast_demand": 10937035.0,
+        "forecast_lower": 9043834.0,
+        "forecast_upper": 12830236.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 6,
+        "forecast_ym": "2017-06",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 0.9995,
+        "forecast_demand": 11176225.0,
+        "forecast_lower": 9241620.0,
+        "forecast_upper": 13110829.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 7,
+        "forecast_ym": "2017-07",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 1.1964,
+        "forecast_demand": 13377551.0,
+        "forecast_lower": 11061897.0,
+        "forecast_upper": 15693205.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 8,
+        "forecast_ym": "2017-08",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 0.9776,
+        "forecast_demand": 10930733.0,
+        "forecast_lower": 9038623.0,
+        "forecast_upper": 12822843.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 9,
+        "forecast_ym": "2017-09",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 0.9552,
+        "forecast_demand": 10680615.0,
+        "forecast_lower": 8831801.0,
+        "forecast_upper": 12529430.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 10,
+        "forecast_ym": "2017-10",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 1.0081,
+        "forecast_demand": 11272311.0,
+        "forecast_lower": 9321074.0,
+        "forecast_upper": 13223549.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 11,
+        "forecast_ym": "2017-11",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 0.9991,
+        "forecast_demand": 11171869.0,
+        "forecast_lower": 9238019.0,
+        "forecast_upper": 13105720.0
+      },
+      {
+        "warehouse": "Whse_C",
+        "forecast_year": 2017,
+        "forecast_month": 12,
+        "forecast_ym": "2017-12",
+        "baseline_level": 11181758.0,
+        "seasonal_index": 1.0045,
+        "forecast_demand": 11232137.0,
+        "forecast_lower": 9287854.0,
+        "forecast_upper": 13176420.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 1,
+        "forecast_ym": "2017-01",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 0.9829,
+        "forecast_demand": 57375469.0,
+        "forecast_lower": 53554262.0,
+        "forecast_upper": 61196675.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 2,
+        "forecast_ym": "2017-02",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 0.9933,
+        "forecast_demand": 57980739.0,
+        "forecast_lower": 54119222.0,
+        "forecast_upper": 61842256.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 3,
+        "forecast_ym": "2017-03",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 1.0484,
+        "forecast_demand": 61200271.0,
+        "forecast_lower": 57124333.0,
+        "forecast_upper": 65276209.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 4,
+        "forecast_ym": "2017-04",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 1.0001,
+        "forecast_demand": 58381161.0,
+        "forecast_lower": 54492975.0,
+        "forecast_upper": 62269346.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 5,
+        "forecast_ym": "2017-05",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 0.9322,
+        "forecast_demand": 54418768.0,
+        "forecast_lower": 50794478.0,
+        "forecast_upper": 58043057.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 6,
+        "forecast_ym": "2017-06",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 1.0162,
+        "forecast_demand": 59319473.0,
+        "forecast_lower": 55368796.0,
+        "forecast_upper": 63270150.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 7,
+        "forecast_ym": "2017-07",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 1.0703,
+        "forecast_demand": 62476426.0,
+        "forecast_lower": 58315496.0,
+        "forecast_upper": 66637356.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 8,
+        "forecast_ym": "2017-08",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 0.8893,
+        "forecast_demand": 51914368.0,
+        "forecast_lower": 48456871.0,
+        "forecast_upper": 55371865.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 9,
+        "forecast_ym": "2017-09",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 0.9632,
+        "forecast_demand": 56227108.0,
+        "forecast_lower": 52482383.0,
+        "forecast_upper": 59971833.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 10,
+        "forecast_ym": "2017-10",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 1.0814,
+        "forecast_demand": 63127175.0,
+        "forecast_lower": 58922905.0,
+        "forecast_upper": 67331445.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 11,
+        "forecast_ym": "2017-11",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 1.0346,
+        "forecast_demand": 60391733.0,
+        "forecast_lower": 56369643.0,
+        "forecast_upper": 64413822.0
+      },
+      {
+        "warehouse": "Whse_J",
+        "forecast_year": 2017,
+        "forecast_month": 12,
+        "forecast_ym": "2017-12",
+        "baseline_level": 58373959.0,
+        "seasonal_index": 0.988,
+        "forecast_demand": 57674816.0,
+        "forecast_lower": 53833673.0,
+        "forecast_upper": 61515958.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 1,
+        "forecast_ym": "2017-01",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 1.1405,
+        "forecast_demand": 12884653.0,
+        "forecast_lower": 9365854.0,
+        "forecast_upper": 16403451.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 2,
+        "forecast_ym": "2017-02",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 0.9102,
+        "forecast_demand": 10282051.0,
+        "forecast_lower": 7474023.0,
+        "forecast_upper": 13090080.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 3,
+        "forecast_ym": "2017-03",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 1.1963,
+        "forecast_demand": 13514348.0,
+        "forecast_lower": 9823579.0,
+        "forecast_upper": 17205116.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 4,
+        "forecast_ym": "2017-04",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 0.9645,
+        "forecast_demand": 10895811.0,
+        "forecast_lower": 7920165.0,
+        "forecast_upper": 13871457.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 5,
+        "forecast_ym": "2017-05",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 1.0755,
+        "forecast_demand": 12149796.0,
+        "forecast_lower": 8831687.0,
+        "forecast_upper": 15467906.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 6,
+        "forecast_ym": "2017-06",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 1.0104,
+        "forecast_demand": 11414422.0,
+        "forecast_lower": 8297144.0,
+        "forecast_upper": 14531701.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 7,
+        "forecast_ym": "2017-07",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 1.0489,
+        "forecast_demand": 11849056.0,
+        "forecast_lower": 8613079.0,
+        "forecast_upper": 15085034.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 8,
+        "forecast_ym": "2017-08",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 0.9011,
+        "forecast_demand": 10179285.0,
+        "forecast_lower": 7399322.0,
+        "forecast_upper": 12959248.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 9,
+        "forecast_ym": "2017-09",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 0.8266,
+        "forecast_demand": 9338351.0,
+        "forecast_lower": 6788047.0,
+        "forecast_upper": 11888655.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 10,
+        "forecast_ym": "2017-10",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 1.0116,
+        "forecast_demand": 11427722.0,
+        "forecast_lower": 8306811.0,
+        "forecast_upper": 14548633.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 11,
+        "forecast_ym": "2017-11",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 0.9323,
+        "forecast_demand": 10531900.0,
+        "forecast_lower": 7655638.0,
+        "forecast_upper": 13408162.0
+      },
+      {
+        "warehouse": "Whse_S",
+        "forecast_year": 2017,
+        "forecast_month": 12,
+        "forecast_ym": "2017-12",
+        "baseline_level": 11296955.0,
+        "seasonal_index": 0.9822,
+        "forecast_demand": 11096058.0,
+        "forecast_lower": 8065725.0,
+        "forecast_upper": 14126392.0
+      }
+    ],
+    "top_15_skus": [
+      {
+        "product_code": "Product_1359",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 1,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 16935.0,
+        "total_net_demand": 470610000.0,
+        "demand_share_pct": 9.2348,
+        "cv_60m": 0.1346,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1248",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 1,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 6348.0,
+        "total_net_demand": 288927000.0,
+        "demand_share_pct": 5.6696,
+        "cv_60m": 0.2953,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_0083",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_S",
+        "warehouse_count": 3,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 1987.0,
+        "total_net_demand": 210427000.0,
+        "demand_share_pct": 4.1292,
+        "cv_60m": 0.2917,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1341",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_S",
+        "warehouse_count": 2,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 2657.0,
+        "total_net_demand": 166411000.0,
+        "demand_share_pct": 3.2655,
+        "cv_60m": 0.4591,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1295",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 1,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 10575.0,
+        "total_net_demand": 121992000.0,
+        "demand_share_pct": 2.3939,
+        "cv_60m": 0.1895,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1241",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 3,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 5471.0,
+        "total_net_demand": 115323000.0,
+        "demand_share_pct": 2.263,
+        "cv_60m": 0.2815,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1245",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_C",
+        "warehouse_count": 2,
+        "abc_class": "A",
+        "xyz_class": "Y",
+        "demand_pattern": "Smooth",
+        "positive_months": 59.0,
+        "total_order_lines": 568.0,
+        "total_net_demand": 102037000.0,
+        "demand_share_pct": 2.0023,
+        "cv_60m": 0.5722,
+        "adi": 1.0169
+      },
+      {
+        "product_code": "Product_1286",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 1,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 8888.0,
+        "total_net_demand": 101331800.0,
+        "demand_share_pct": 1.9884,
+        "cv_60m": 0.1856,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1432",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_S",
+        "warehouse_count": 4,
+        "abc_class": "A",
+        "xyz_class": "Y",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 2992.0,
+        "total_net_demand": 96827000.0,
+        "demand_share_pct": 1.9,
+        "cv_60m": 0.6579,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1274",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 1,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 7047.0,
+        "total_net_demand": 92755000.0,
+        "demand_share_pct": 1.8201,
+        "cv_60m": 0.1473,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1451",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 1,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 4702.0,
+        "total_net_demand": 91799000.0,
+        "demand_share_pct": 1.8014,
+        "cv_60m": 0.139,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1287",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 1,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 7829.0,
+        "total_net_demand": 88484000.0,
+        "demand_share_pct": 1.7363,
+        "cv_60m": 0.214,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1378",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 1,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 9770.0,
+        "total_net_demand": 83325300.0,
+        "demand_share_pct": 1.6351,
+        "cv_60m": 0.1857,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1382",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 1,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 8619.0,
+        "total_net_demand": 81554200.0,
+        "demand_share_pct": 1.6003,
+        "cv_60m": 0.1796,
+        "adi": 1.0
+      },
+      {
+        "product_code": "Product_1264",
+        "product_category": "Category_019",
+        "primary_warehouse": "Whse_J",
+        "warehouse_count": 4,
+        "abc_class": "A",
+        "xyz_class": "X",
+        "demand_pattern": "Smooth",
+        "positive_months": 60.0,
+        "total_order_lines": 4517.0,
+        "total_net_demand": 80100000.0,
+        "demand_share_pct": 1.5718,
+        "cv_60m": 0.3353,
+        "adi": 1.0
+      }
+    ],
+    "backtest_by_warehouse": [
+      {
+        "warehouse": "Whse_J",
+        "actual_2016": 682330370.0,
+        "f_naive_1m": 676467398.0,
+        "f_seasonal_naive_12m": 697430144.0,
+        "f_ma_3m": 668288417.0,
+        "f_ma_6m": 667167694.0,
+        "f_seasonal_ma6_hybrid": 666916900.0,
+        "hybrid_wape_pct": 6.66,
+        "ma6_wape_pct": 6.83,
+        "snaive_wape_pct": 9.32
+      },
+      {
+        "warehouse": "Whse_S",
+        "actual_2016": 143190834.0,
+        "f_naive_1m": 154282720.0,
+        "f_seasonal_naive_12m": 243869967.0,
+        "f_ma_3m": 158477681.0,
+        "f_ma_6m": 168184816.0,
+        "f_seasonal_ma6_hybrid": 169139828.0,
+        "hybrid_wape_pct": 27.31,
+        "ma6_wape_pct": 26.52,
+        "snaive_wape_pct": 70.31
+      },
+      {
+        "warehouse": "Whse_C",
+        "actual_2016": 130848147.0,
+        "f_naive_1m": 132273585.0,
+        "f_seasonal_naive_12m": 125149312.0,
+        "f_ma_3m": 131281289.0,
+        "f_ma_6m": 130726119.0,
+        "f_seasonal_ma6_hybrid": 130695707.0,
+        "hybrid_wape_pct": 17.31,
+        "ma6_wape_pct": 16.28,
+        "snaive_wape_pct": 15.9
+      },
+      {
+        "warehouse": "Whse_A",
+        "actual_2016": 28998778.0,
+        "f_naive_1m": 30506243.0,
+        "f_seasonal_naive_12m": 28995542.0,
+        "f_ma_3m": 30652486.0,
+        "f_ma_6m": 30386925.0,
+        "f_seasonal_ma6_hybrid": 30370150.0,
+        "hybrid_wape_pct": 14.17,
+        "ma6_wape_pct": 15.92,
+        "snaive_wape_pct": 17.3
+      }
+    ]
+  }
+}
